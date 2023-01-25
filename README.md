@@ -7,7 +7,7 @@ This is a very low budget fiverr project.
 3. Redesign new UI using simple html, css and Bootstrap.
 4. Added new shutterstock premium images in this project.
 
-## live-site link [pip](https://www.pvp-cambodia.com/).
+## live-site link [Click](https://www.pvp-cambodia.com/).
 
 ```bash
 git add .
