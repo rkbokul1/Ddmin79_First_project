@@ -6,3 +6,13 @@
 .phone-number {
     color: #0E6540;
 }
+.banner{
+    background: url("../assests/Legal\ Table.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.img-banner{
+    width: 100%;
+}
+
