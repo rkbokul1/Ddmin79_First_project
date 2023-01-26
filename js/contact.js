@@ -14,8 +14,8 @@ const sendMail = (event) => {
         Host: "smtp.elasticemail.com",
         Username: "rkbokul@gmail.com",
         Password: "C34045DD50C43CDF6187EDDDE382C9D8D9F0",
-        To: 'rkbokul@gmail.com',
-        From: mail,
+        To: mail,
+        From: 'rkbokul@gmail.com',
         Subject: "New contact Form",
         Body: `
             Name: ${fName} ${lName}; <br>
