@@ -1,5 +1,13 @@
 
-body{
-    background-color: #7B583A;
+body, .menu-bar{
+    /* background-color: #7B583A; */
+    background-image: linear-gradient(90deg, #9C653F, #D6AB81, #CFA578);
 }
 
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }
