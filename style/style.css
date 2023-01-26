@@ -1,27 +1,5 @@
 
-body {
-    background-color: #ebe4c7;
-}
-
-.navbar{
-    background-color: #ebe4c7;
-}
-
-.header-top {
-    color: #0E6540;
-    padding-top: 5px;
-}
-
-.phone-number {
-    color: #0E6540;
-}
-.banner{
-    background: url("../assests/Legal\ Table.png") no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-}
-
-.img-banner{
-    width: 100%;
+body{
+    background-color: #7B583A;
 }
 
