@@ -15,7 +15,7 @@ const sendMail = async (event) => {
         Email.send({
             SecureToken: "de8683f7-f063-4201-a484-ada522e0d109",
             To: 'consult@pvp-cambodia.com',
-            From: mail,
+            From: 'consult@pvp-cambodia.com',
             Subject: "New Contact Form",
             Body: `name: ${fName} ${lName} <br>
             email: ${mail} <br>
