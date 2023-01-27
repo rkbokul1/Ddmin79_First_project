@@ -17,21 +17,23 @@
 <body>
     <!-- top header start -->
     <section class="container-fluid pt-2 bg-white">
-        <div class="row text-center">
+        <div class="row text-center align-items-center">
             <div class="col-lg-3 text-md-start">
-                <img class="w-75" src="./assests/images/top-left.jpg" alt="">
+                <img class="w-100" src="./assests/images/top-left.jpg" alt="">
             </div>
             <div class="col-lg-3 text-md-end mt-3 mt-md-0">
                 <img class="w-75" src="./assests/LOGO.jpg" alt="">
                 <h1 class="text-end fs-4">PHIRUN VANNAK <br>
-                    <span style="color: #EF5A10;">& PARTNERS.</span></h1>
+                    <span style="color: #EF5A10;">& PARTNERS.</span>
+                </h1>
             </div>
             <div class="col-lg-3">
                 <img class="w-75" src="./assests/images/handshake.png" alt="">
-                <p class="fw-bold fst-italic mt-0 " style="background-color: #FFB400;">...making the law work for you.</p>
+                <p class="fw-bold fst-italic mt-0 " style="background-color: #FFB400;">...making the law work for you.
+                </p>
             </div>
             <div class="col-lg-3 text-md-end">
-                <img class="w-75 text-md-end" src="./assests/images/top-right.jpg" alt="">
+                <img class="w-100 text-md-end" src="./assests/images/top-right.jpg" alt="">
             </div>
         </div>
     </section>
@@ -49,14 +51,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="./services.html">Service</a>
-                    </li>                           
+                        <a class="nav-link text-white" href="./services.html">Service</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="#">Contact</a>
-                    </li>                           
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
                 </ul>
 
             </div>
@@ -65,7 +67,7 @@
     <!-- navbar end -->
 
     <section class="container-fluid">
-        <div class="row py-3">
+        <div class="row">
             <img src="./assests/Legal Table.png" alt="">
         </div>
     </section>
@@ -92,37 +94,40 @@
                         <div>
                             <h2 style="color: #FFB400;">Email:</h2>
                             <p>info@pvp-cambodia.com <br>
-                                contact@pvp-cambodia.com</p>
+                                consult@pvp-cambodia.com</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 border-start d-flex justify-content-center">
-                        <div>
-                            <form onsubmit="sendMail(event)">
-                                <table class="table">
-                                    <tr>
-                                        <td><label for="fName">First Name*</label></td>
-                                        <td><input type="text" name="" id="fName"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="lName">Last Name*</label></td>
-                                        <td><input type="text" name="" id="lName"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="mail">Email*:</label></td>
-                                        <td><input type="email" name="" id="mail"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="phone">Phone*:</label></td>
-                                        <td><input type="number" name="" id="phone"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="submit"></label></td>
-                                        <input class="" type="submit" value="submit">
-                                    </tr>
-                                    
-                                </table>
-                            </form>
-                        </div>
+
+                        <form onsubmit="sendMail(event)">
+                            <table class="bg-white">
+                                <tr>
+                                    <td class="pe-2">First Name:</td>
+                                    <td><input type="text" name="name" id="fname" required></td>
+                                </tr>
+                                <tr>
+                                    <td class="pe-2">Last Name:</td>
+                                    <td><input type="text" name="name" id="lname" required></td>
+                                </tr>
+                                <tr>
+                                    <td class="pe-2">Email:</td>
+                                    <td><input type="email" name="email" id="mail" required></td>
+                                </tr>
+                                <tr>
+                                    <td class="pe-2">Phone:</td>
+                                    <td><input type="number" name="email" id="phone" required></td>
+                                </tr>
+                                <tr>
+                                    <td class="pe-2">Message:</td>
+                                    <td><textarea name="message" id="msg" required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td class="pe-2"></td>
+                                    <td><input type="submit" value="Submit"></td>
+                                </tr>
+                            </table>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -149,28 +154,3 @@
 </html>
 
 
-<!-- <div class="col-sm-6 col-md-6 col-lg-6 border-start d-flex justify-content-center">
-                        <form onsubmit="sendMail(event)">
-                            <label for="fname">
-                                <h6>First name:</h6>
-                                <input class="form-control" type="text" name="name" id="fname" placeholder="first name">
-                            </label> <br>
-                            <label for="lname">
-                                <h6>Last name:</h6>
-                                <input class="form-control" type="text" name="name" id="lname" placeholder="last name">
-                            </label> <br>
-                            <label for="mail">
-                                <h6>Email:</h6>
-                                <input class="form-control" type="email" name="name" id="mail" placeholder="mail">
-                            </label> <br>
-                            <label for="phone">
-                                <h6>Phone:</h6>
-                                <input class="form-control" type="number" name="name" id="phone" placeholder="phone">
-                            </label> <br>
-                            <label for="">
-                                <h6>Message</h6>
-                                <textarea class="form-control" name="" id="msg" cols="30" rows="3"></textarea>
-                            </label> <br>
-                            <input class="btn btn-info" type="submit" value="Submit">
-                        </form>
-                    </div> -->

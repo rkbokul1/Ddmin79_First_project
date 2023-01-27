@@ -1,42 +1,30 @@
 
-const sendMail = (event) => {
-    const fName = document.getElementById("fname").value;
-    const lName = document.getElementById("lname").value;
-    const mail = document.getElementById("mail").value;
-    const phone = document.getElementById("phone").value;
-    const msg = document.getElementById("msg").value;
 
-    console.log({ fName, lName, mail, phone, msg });
-
+const sendMail = async (event) => {
     event.preventDefault();
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "rkbokul@gmail.com",
-        Password: "C34045DD50C43CDF6187EDDDE382C9D8D9F0",
-        To: mail,
-        From: 'rkbokul@gmail.com',
-        Subject: "New contact Form",
-        Body: `
-            Name: ${fName} ${lName}; <br>
-            Email: ${mail}; <br>
-            Phone: ${phone};<br>
+    let fName = document.getElementById("fname").value;
+    let lName = document.getElementById("lname").value;
+    let mail = document.getElementById("mail").value;
+    let phone = document.getElementById("phone").value;
+    let msg = document.getElementById("msg").value;
 
-            Message: ${msg}<br>
-        `
+    // console.log({ fName, lName, mail, phone, msg });
 
-    }).then(
-        message => alert(message)
-    );
-
-    reset();
-
+    try {
+        Email.send({
+            SecureToken: "de8683f7-f063-4201-a484-ada522e0d109",
+            To: 'consult@pvp-cambodia.com',
+            From: mail,
+            Subject: "New Contact Form",
+            Body: `name: ${fName} ${lName} <br>
+            email: ${mail} <br>
+            phone: ${phone} <br>
+            message: ${msg}`
+        }).then(
+            message => alert('Email sent successfully')
+        );
+    } catch (error) {
+        alert(error)
+    }
 }
-
-
-// ({
-//     Username: "rkbokul@gmail.com",
-//     Password: "C34045DD50C43CDF6187EDDDE382C9D8D9F0",
-//     token: "e961ce25-29f9-4f10-96ed-1308e561a649",
-//     port: "2525",
-// })

@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
 
-body, .menu-bar{
-    /* background-color: #7B583A; */
-    background-image: linear-gradient(90deg, #9C653F, #D6AB81, #CFA578);
+body,
+.menu-bar {
+  /* background-color: #7B583A; */
+  background-image: linear-gradient(90deg, #9C653F, #D6AB81, #CFA578);
+  font-family: 'Work Sans', sans-serif;
 }
 
-table, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
-  }
-  th, td {
-    background-color: #96D4D4;
-  }
+.logo-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  background-color: #96D4D4;
+}
